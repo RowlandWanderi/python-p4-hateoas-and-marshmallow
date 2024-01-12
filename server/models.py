@@ -5,7 +5,7 @@ db = SQLAlchemy()
 class Newsletter(db.Model):
     __tablename__ = 'newsletters'
 
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer,primary_key=True)
     title = db.Column(db.String)
     body = db.Column(db.String)
     published_at = db.Column(db.DateTime, server_default=db.func.now())
